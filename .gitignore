@@ -1,0 +1,23 @@
+# Composer
+/vendor/
+/composer.lock
+
+# Drupal files and config
+/web/sites/default/files/
+/web/sites/default/settings.php
+/web/sites/default/settings.local.php
+/web/sites/default/services.yml
+
+# DDEV
+/.ddev/secrets/
+/.ddev/.env
+/.ddev/ssh/
+/.ddev/import-db/
+/.ddev/import-files/
+
+# OS
+.DS_Store
+
+# IDEs
+.idea/
+.vscode/

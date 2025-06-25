@@ -1,0 +1,24 @@
+name: pac
+type: theme
+"base theme": stable9
+version: 1.0.0
+libraries:
+  - pac/base
+  - pac/messages
+  - core/normalize
+libraries-extend:
+  user/drupal.user:
+    - pac/user
+  core/drupal.dropbutton:
+    - pac/dropbutton
+  core/drupal.dialog:
+    - pac/dialog
+  file/drupal.file:
+    - pac/file
+  core/drupal.progress:
+    - pac/progress
+  core/drupal.tablesort:
+    - pac/drupal.tablesort
+description: ""
+core_version_requirement: ^10 || ^11
+generator: "starterkit_theme:11.2.0"

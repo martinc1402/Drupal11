@@ -2,6 +2,10 @@
 /vendor/
 /composer.lock
 
+# NPM
+package-lock.json
+node_modules
+
 # Drupal files and config
 /web/sites/default/files/
 /web/sites/default/settings.php

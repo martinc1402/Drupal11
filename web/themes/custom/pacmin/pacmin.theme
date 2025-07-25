@@ -1,0 +1,13 @@
+<?php
+
+use Drupal\ckeditor5\Plugin\CKEditor5PluginDefinition;
+
+/**
+ * Implements hook_ckeditor5_plugin_info_alter().
+ */
+function pacmin_ckeditor5_plugin_info_alter(array &$plugin_definitions): void {  
+    $specialchar_plugin_definition = $plugin_definitions['ckeditor5_specialCharacters']->toArray();
+
+    $specialchar_plugin_definition['drupal']['toolbar_items']['specialCharacters']['label'] = 'New Label';
+    $plugin_definitions['ckeditor5_specialCharacters'] = new CKEditor5PluginDefinition($specialchar_plugin_definition);
+}

@@ -1,0 +1,17 @@
+name: Pacmin
+type: theme
+description: This is a sub theme of Claro
+core_version_requirement: ^10 || ^11
+# Defines the base theme
+base theme: claro
+# Defines libraries group in which we can add CSS/JS.
+# libraries:
+#   - fluffiness/global-styling
+# Regions, quote the names
+regions:
+  header: Header
+  featured: Featured
+  content: Content
+  sidebar_first: First sidebar
+  sidebar_second: Second sidebar
+  footer: Footer

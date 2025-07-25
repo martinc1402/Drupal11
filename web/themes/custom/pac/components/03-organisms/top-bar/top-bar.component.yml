@@ -1,0 +1,22 @@
+$schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
+
+name: Top Bar
+description: Displays a strip of links to related sites (e.g. Defence, Navy), with optional icons.
+status: stable
+group: 03 - Organisms
+
+props:
+  type: object
+  properties:
+    links:
+      type: array
+      title: Related Site Links
+      items:
+        type: object
+        properties:
+          href:
+            type: string
+          text:
+            type: string
+          icon:
+            type: string

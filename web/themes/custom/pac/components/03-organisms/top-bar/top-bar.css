@@ -1,0 +1,44 @@
+.top-bar {
+  background-color: #f3f3f3;
+  color: #5a6770;
+  padding: 0 2rem;
+  height: clamp(50px, 3.125rem, 75px);
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.related-sites {
+  display: flex;
+  align-items: stretch;
+}
+
+.related-sites__list {
+  display: flex;
+  align-items: stretch;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.related-sites__list li {
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+  border-left: 1px solid white;
+}
+
+.related-sites__list li a {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+}
+
+.related-sites__list li img {
+  margin-right: 0.4rem;
+}

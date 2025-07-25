@@ -42,14 +42,43 @@
  * @see html.html.twig
  */
 #}
+
+{% set theme_path = directory %}
+
+
+
 <div class="layout-container">
 
-  <header role="banner">
-  {% if page.header_top_1 %}
 
-  {% endif %}
-    {{ page.header }}
-  </header>
+
+  {#  HEADER #}
+      {# {% if page.header_top_1 or page.header_top_2 or page.header_top_3 or
+      page.header_middle_1 or page.header_middle_2 or page.header_middle_3 or
+      page.header_bottom_1 %} #}
+
+      <header id="site-header" class="site-header" role="banner">
+        {%  if page.header_top_1 or page.header_top_2 or page.header_top_3 %}
+        <div class="header-top">
+          <div class="header-top-1"></div>
+          <div class="header-top-2"></div>
+          <div class="header-top-3"></div>
+        </div>
+       {% endif %}
+
+         {% if page.header_middle_1 or page.header_middle_2 or page.header_middle_3 %}
+        <div class="header-middle">
+          <div class="header-middle-1">{{ page.header_middle_1 }}</div>
+          <div class="header-middle-2">{{ page.header_middle_2 }}</div>
+          <div class="header-middle-3">{{ page.header_middle_3 }}</div>
+        </div>
+         {% endif %}
+
+       {% if page.header_bottom_1 %}
+        <div class="header-bottom">{{ page.header_bottom_1 }}</div>
+        {% endif %}
+      </header>
+     {# {% endif %} #}
+
 
   {{ page.primary_menu }}
   {{ page.secondary_menu }}

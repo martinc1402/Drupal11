@@ -25,3 +25,5 @@ node_modules
 # IDEs
 .idea/
 .vscode/
+*storybook.log
+storybook-static

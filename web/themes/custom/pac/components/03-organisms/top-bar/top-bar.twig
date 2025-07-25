@@ -1,31 +1,16 @@
 <div class="top-bar" role="complementary" aria-label="Related sites and search">
   <div class="related-sites">
     <ul class="related-sites__list">
-      <li>
-        <a href="https://defence.gov.au/">
-          <img src="{{ asset_path }}/logo-defence.png" alt="Defence logo" />Defence
-        </a>
-      </li>
-      <li>
-        <a href="https://www.minister.defence.gov.au/">
-          <img src="{{ asset_path }}/logo-ministers.png" alt="logo of parliament house" />Ministers
-        </a>
-      </li>
-      <li>
-        <a href="https://www.navy.gov.au/">
-          <img src="{{ asset_path }}/logo-navy.png" alt="Navy logo" />Navy
-        </a>
-      </li>
-      <li>
-        <a href="https://www.army.gov.au/">
-          <img src="{{ asset_path }}/logo-army.png" alt="Army logo" />Army
-        </a>
-      </li>
-      <li>
-        <a href="https://www.airforce.gov.au/">
-          <img src="{{ asset_path }}/logo-airforce.png" alt="Air force logo" />Air force
-        </a>
-      </li>
+      {% for link in links %}
+        <li>
+          <a href="{{ link.href }}">
+  {% if link.icon -%}
+              <img src="{{ link.icon }}" alt="" aria-hidden="true" />
+  {%- endif %}
+            {{ link.text }}
+          </a>
+        </li>
+      {% endfor %}
     </ul>
   </div>
 </div>

@@ -1,0 +1,24 @@
+name: determined
+type: theme
+"base theme": stable9
+version: 1.0.0
+libraries:
+  - determined/base
+  - determined/messages
+  - core/normalize
+libraries-extend:
+  user/drupal.user:
+    - determined/user
+  core/drupal.dropbutton:
+    - determined/dropbutton
+  core/drupal.dialog:
+    - determined/dialog
+  file/drupal.file:
+    - determined/file
+  core/drupal.progress:
+    - determined/progress
+  core/drupal.tablesort:
+    - determined/drupal.tablesort
+description: ""
+core_version_requirement: ^10 || ^11
+generator: "starterkit_theme:11.2.0"

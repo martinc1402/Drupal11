@@ -1,0 +1,35 @@
+# This is so your IDE knows about the syntax for fixes and autocomplete.
+$schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
+
+# The human readable name.
+name: Accordion
+
+# Status can be: "experimental", "stable", "deprecated", "obsolete".
+status: stable
+
+# Schema for the props. We support www.json-schema.org. Learn more about the
+# syntax there.
+props:
+  type: object
+  required:
+    - title
+  properties:
+    title:
+      type: string
+      title: Accordion Title
+      description: Text shown in the accordion's summary element.
+      default: "Wow"
+    modifier:
+      type: string
+      title: CSS Modifier
+      description: Optional BEM-style modifier class for styling variants.
+      default: "modifier class"
+    name:
+      type: string
+      title: Name attribute
+      description: The name of the accordion.
+      default: "name"
+slots:
+  content:
+    title: Content
+    default: wow

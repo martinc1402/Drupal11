@@ -1,0 +1,11 @@
+{% set classes = [
+  'chip',
+  'chip--color-' ~ color|clean_class
+] %}
+{% if dismissable %}
+  {% set classes = classes|merge(['chip--dismissable']) %}
+{% endif %}
+
+<div{{ attributes.addClass(classes) }}">
+   {{ content }}
+</div>

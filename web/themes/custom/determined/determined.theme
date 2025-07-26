@@ -1,9 +1,11 @@
 <?php
 
+
 /**
  * @file
  * Functions to support theming.
  */
+
 
 /**
  * Implements hook_preprocess_image_widget().

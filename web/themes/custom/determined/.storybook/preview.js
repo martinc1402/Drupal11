@@ -1,5 +1,7 @@
 /** @type { import('@storybook/html-vite').Preview } */
 
+import "../css/base.css";
+
 const preview = {
   parameters: {
     controls: {

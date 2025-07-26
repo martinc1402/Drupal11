@@ -1,0 +1,26 @@
+.menu__link {
+  color: inherit;
+}
+
+.menu__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 1rem;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+@media screen and (min-width: 64rem) {
+  .menu__list {
+    display: flex;
+    gap: 2rem;
+  }
+}
+
+.top-bar {
+  background-color: rgb(243, 243, 243);
+  color: rgb(26, 26, 26);
+  height: 3.125rem;
+}

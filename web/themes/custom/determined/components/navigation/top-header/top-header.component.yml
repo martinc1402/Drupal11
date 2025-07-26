@@ -1,0 +1,42 @@
+$schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
+
+# The human-readable name.
+name: Top Header
+
+# Status can be: "experimental", "stable", "deprecated", "obsolete".
+status: stable
+
+# Schema for the props. We support www.json-schema.org. Learn more about the
+# syntax there.
+props:
+  # Props are always an object with keys. Each key is a variable in your
+  # component template.
+  type: object
+
+  properties:
+    items:
+      type: array
+      title: Menu Items.
+      items:
+        type: object
+        properties:
+          title:
+            type: string
+            examples:
+              - Defence
+              - Ministers
+              - Navy
+              - Army
+              - Air Force
+          url:
+            type: string
+            format: uri
+            examples:
+              - https://example.com
+              - https://example.co.uk
+              - https://example.com.au
+              - https://example.co
+              - https://example.net
+        required:
+          - title
+          - url
